@@ -99,20 +99,35 @@ const Search = () => {
               </select>
             </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="Textarea3">Dono:</label>
-            <input
-              type="textarea"
-              className="form-control"
-              id="Textarea3"
-              rows="1"
-              onChange={e => {
-                const val = e.target.value;
-                setSearch(prevState => {
-                  return { ...prevState, ownerName: val };
-                });
-              }}
-            />
+         <div className="row">
+            <div className="form-group my-1 col-md-8">
+              <label htmlFor="Textarea1">Dono:</label>
+              <textarea
+                className="form-control"
+                id="Textarea1"
+                rows="1"
+                onChange={e => {
+                  const val = e.target.value;
+                  setSearch(prevState => {
+                    return { ...prevState, ownerName: val };
+                  });
+                }}
+              />
+            </div>
+            <div className="form-group my-1 col">
+              <label htmlFor="Textarea2">Última visita:</label>
+              <textarea
+                className="form-control"
+                id="Textarea2"
+                rows="1"
+                onChange={e => {
+                  const val = e.target.value;
+                  setSearch(prevState => {
+                    return { ...prevState, lastVisit: val };
+                  });
+                }}
+              />
+            </div>
           </div>
           <Doglist search={search} />
         </div>
