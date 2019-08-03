@@ -32,6 +32,9 @@ const DogList = ({ search }) => {
       return dog.dateBirth.includes(search.dateBirth);
     })
     .filter(dog => {
+      return dog.gender.includes(search.lastVisit);
+    })
+    .filter(dog => {
       return dog.gender.includes(search.gender);
     });
 
