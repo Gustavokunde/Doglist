@@ -10,6 +10,7 @@ const Search = () => {
     castrated: '',
     gender: '',
     ownerName: '',
+    lastVisit: ''
   });
 
   return (
