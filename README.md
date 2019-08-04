@@ -31,4 +31,4 @@ Para continuar tendo acesso à lista percorra a numeração das páginas, que es
   Tanto a data de nascimento, quanto de última visita deve ser informada no formato : dd/mm/aaaa.
   
   #Sugestões de melhoria:
-  Implementar o CRUD completo, melhorar numeração da paginação e colocar escrita de data no formato calendário. 
+  Implementar o CRUD completo, melhorar numeração da página e colocar escrita de data no formato calendário. 
