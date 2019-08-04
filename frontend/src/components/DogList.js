@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 
+// Pega os dados dos caes do DB e lista em uma tabela
+
 const DogList = ({ search }) => {
   const [dogs, setDogs] = useState([]);
 
+  // usados para paginação
   const [currentPage, setCurrentPage] = useState(1);
   const [dogsPerPage] = useState(23);
 
@@ -13,6 +16,7 @@ const DogList = ({ search }) => {
       .then(dogs => setDogs(dogs));
   }, []);
 
+  // filtra os dados que serão mostrados na tabela conforme definição do usuario
   const filteredDogs = dogs
     .filter(dog => {
       return dog.ownerName
@@ -38,12 +42,12 @@ const DogList = ({ search }) => {
       return dog.gender.includes(search.gender);
     });
 
-  // Get current posts
+  // Define qual parte da lista será mostrada
   const indexOfLastDog = currentPage * dogsPerPage;
   const indexOfFirstDog = indexOfLastDog - dogsPerPage;
   const currentDogs = filteredDogs.slice(indexOfFirstDog, indexOfLastDog);
 
-  // Change page
+  // Define a página
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (

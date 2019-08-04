@@ -10,7 +10,7 @@ const Search = () => {
     castrated: '',
     gender: '',
     ownerName: '',
-    lastVisit: ''
+    lastVisit: '',
   });
 
   return (
@@ -65,7 +65,7 @@ const Search = () => {
                 })}
               </select>
             </div>
-            <div className="form-group my-1 mx-3 col-md-5 #007fff">
+            <div className="form-group my-1 mx-3 col-md-5">
               <label htmlFor="inputState">Castrado:</label>
               <select
                 id="inputState"
@@ -82,7 +82,7 @@ const Search = () => {
                 <option selected />
               </select>
             </div>
-            <div className="form-group my-1 mx-1 col #007fff">
+            <div className="form-group my-1 mx-1 col">
               <label htmlFor="inputState">Gênero:</label>
               <select
                 id="inputState"
@@ -100,7 +100,7 @@ const Search = () => {
               </select>
             </div>
           </div>
-         <div className="row">
+          <div className="row">
             <div className="form-group my-1 col-md-8">
               <label htmlFor="Textarea1">Dono:</label>
               <textarea
