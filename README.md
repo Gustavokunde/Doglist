@@ -1,6 +1,6 @@
 # Doglist
 
-Este projeto é referente a um desafio para um processo seletivo.
+Este projeto é referente a um desafio para um processo seletivo realizado na metade de 2019.
 Foi solicitada uma listagem simples de cachorros que passaram por uma Pet Shop, mas com alguns filtros básicos. 
 A aplicação inicia com um conjunto inicial de 1.000 cachorros aleatórios.
 
